@@ -26,7 +26,7 @@ if (isset($_POST) & !empty($_POST)) {
 	<div class="container-fluid">
 		<nav class="navbar navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.php">Scandiweb</a>
+				<a class="navbar-brand" href="/">Scandiweb</a>
 			</div>
 		</nav>
 		<div class="container mt-5">
@@ -38,7 +38,7 @@ if (isset($_POST) & !empty($_POST)) {
 						</div>
 					</div>
 					<div class="col-lg-6 margin-tb text-right buttons">
-						<a href="add-product.php">ADD</a>
+						<a href="add-product">ADD</a>
 						<button type="submit" id="delete-product-btn">MASS DELETE</button>
 					</div>
 				</div>
