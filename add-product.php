@@ -1,4 +1,3 @@
-
 <?php
  require_once('Classes/Product.php');
  require_once('Classes/Book.php');
@@ -37,7 +36,7 @@
     <div class="container-fluid">
 		<nav class="navbar navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.php">Scandiweb</a>
+				<a class="navbar-brand" href="/">Scandiweb</a>
 			</div>
 		</nav>
 		<div class="container mt-5">
@@ -50,7 +49,7 @@
 					</div>
 					<div class="col-lg-6 margin-tb text-right product">
 						<input type="submit" name="submit" class="button_1"value="Save" />
-						<a class="button_1"href="index.php">Cancel</a>
+						<a class="button_1"href="/">Cancel</a>
 					</div>
 				</div>
 				<div class="form-group row">
