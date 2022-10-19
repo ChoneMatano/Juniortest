@@ -10,14 +10,14 @@ abstract class Product
 
     public function getConnection()
     {
-        return new PDO('mysql:host=localhost;dbname=matano', 'root', '', array(
+        return new PDO('mysql:host=localhost;dbname=id19711493_matano', 'id19711493_mafive', 'F)Isa]f+p/eeAo6}', array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ));
     }
 
     public static function getData()
     {
-        $con = new PDO('mysql:host=localhost;dbname=matano', 'root', '', array(
+        $con = new PDO('mysql:host=localhost;dbname=id19711493_matano', 'id19711493_mafive', 'F)Isa]f+p/eeAo6}', array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ));
         $stm = $con->prepare("SELECT * from products");
@@ -46,12 +46,12 @@ abstract class Product
             ":dimension" => $this->getType()
         ]);
 
-        header("Location: index.php");
+        header("Location: https://juniortestchonematano.000webhostapp.com/");
     }
 
     public static function deleteData($ids)
     {
-        $con = new PDO('mysql:host=localhost;dbname=matano', 'root', '', array(
+        $con = new PDO('mysql:host=localhost;dbname=id19711493_matano', 'id19711493_mafive', 'F)Isa]f+p/eeAo6}', array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ));
         foreach ($ids as $id) {
@@ -60,7 +60,7 @@ abstract class Product
             $stmt->execute();
         }
 
-        header("Location: index.php");
+        header("Location: /");
     }
 
     public function __set($name, $value)
